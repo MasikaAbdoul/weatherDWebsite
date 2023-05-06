@@ -34,14 +34,11 @@ search.addEventListener("keydown", (e) => {
             const temV = data.current.temp_c;
             temp.innerHTML = `<span style='font-weight: 300; letter-spacing: 1px; font-style: italic; font-size: 10pt;'>temperature</span> ${temV}&#8451`;
             const c_region = data.location.region;
-            function updateTime(param) {
-                const d = new Date();
-                const timeZone = {timezone: `${c_region}/${$location}`};
-                const timeString = d.toLocaleString('en-EU', timeZone);
-                time.innerText = timeString;
+            function updateTime() {
+                time.innerText = data.location.localtime;
             }
 
-            setInterval(updateTime, 1000);
+            updateTime();
         })
           .catch((error) => console.error(error));
     }
