@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic weather app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <main class="container">
+      <div id="country">
+        <div class="search-container">
+          <input type="search" placeholder="location" id="search" required spellcheck="false" />
+          <!--<button type="submit" id="btn">search</button>-->
+        </div>
+        <div class="country-info">
+          <h3 id="time">timezone</h3>
+          <h1 class="name">province</h1>
+          <h3 class="country-name">country</h3>
+        </div>
+      </div>
+      <div id="weather">
+        <div class="condition">
+          <div class="condition-info">
+            <div class="icon"></div>
+            <h3 class="text"></h3>
+          </div>
+          <div class="condition-info-b">
+            <h4 class="feelslike"></h4>
+            <h4 class="humidity"></h4>
+            <h4 class="temp"></h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

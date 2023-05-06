@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #465362;
+  color: #f4fffd;
+}
+
+h1 {
+  font-size: 25pt;
+  margin: 50px 50px 0;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 12pt;
+  margin: 0 70px 0;
+  letter-spacing: 1.5px;
+}
+
+h4 {
+  font-size: 11pt;
+  letter-spacing: 1.5px;
+  margin: 10px 15px;
+}
+
+.condition-info {
+  display: flex;
+  padding: 15px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #ffffff15;
+  border-bottom: 0.5px solid #ffffff49;
+}
+
+.condition-info-b {
+  padding: 15px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff15;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#country {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.name {
+  padding: 5px 32px;
+  border-radius: 7px;
+  background-color: #ffffff49;
+}
+
+.country-name {
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff17;
+  color: #f4fffdc2;
+}
+
+#time {
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #ffffff17;
+  color: #f4fffdc2;
+  position: relative;
+  top: 50px;
+}
+
+#weather {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  border-left: 0.5px solid #ffffff49;
+}
+
+.country {
+  height: 80vh;
+  width: 50%;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#search {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-style: none;
+  cursor: pointer;
+  outline: 0.2px solid rgb(223, 218, 218);
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+
+#search::placeholder {
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn {
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.condition {
+  height: 70vh;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  * {
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  #country {
+    width: 100%;
+  }
+
+  #weather{
+    width: 100%;
+    border-top: 0.5px solid #ffffff49;
+  }
+
+  .country-info{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0.5px solid #ffffff49;
+    padding-top: 50px;
+  }
+
+  #time{
+    width: 80%;
+    margin: 0;
+    position: inherit;
+  }
+
+  .name{
+    width: 100%;
+    margin: 0;
+  }
+
+  .country-name{
+    width: 80%;
+    margin: 0;
+  }
+}
